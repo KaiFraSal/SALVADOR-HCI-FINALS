@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>PokeGame</title>
+</head>
+<body>
+
+    <div id="background">
+        <img id="backgroundImage" src="resources/battleGrounds.png">
+        
+        <div id="myPokemon">
+            <img id="myPokemonImage" src="resources/treecko.png">
+        </div>
+        <div id="myStats">
+            <img id="myStatsImage" src="resources/myStats.png">
+            <p id="myName">TREECKO</p>
+            <p id="myLvl">Lv 10</p>
+        </div>
+        <div id="myAttack">
+            <img id="myAttackImage" src="resources/placeholder.png">
+        </div>
+        <div id="myOuterHpBar">
+            <div id="myInnerHpBar" style="width: 100%;"></div>
+        </div>
+        
+        <div id="enemyPokemon">
+            <img id="enemyPokemonImage" src="resources/mudkip.png">
+        </div>
+        <div id="enemyStats">
+            <img id="enemyStatsImage" src="resources/enemyStats.png">
+            <p id="enemyName">MUDKIP</p>
+            <p id="enemyLvl">Lv 7</p>
+        </div>
+        <div id="enemyAttack">
+            <img id="enemyAttackImage" src="resources/placeholder.png">
+        </div>
+        <div id="enemyOuterHpBar">
+            <div id="enemyInnerHpBar" style="width: 100%;"></div>
+        </div>
+    </div>
+
+    <div id="controls" style="position: relative;">
+        <div>
+            <p style="margin: 0; color: tomato; text-align: center; font-size: 20px;">ATTACK</p>
+            <button id="firstButton"><p id="firstName" style="margin: 0; font-size: 20px;"></p></button>
+            <button id="secondButton"><p id="secondName" style="margin: 0; font-size: 20px;">-------</p></button>
+            <button id="thirdButton"><p id="thirdName" style="margin: 0; font-size: 20px;">-------</p></button>
+            <button id="fourthButton"><p id="fourthName" style="margin: 0; font-size: 20px;">-------</p></button>
+        </div>        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

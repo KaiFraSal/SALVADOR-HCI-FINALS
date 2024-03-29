@@ -1,0 +1,168 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#backgroundImage {
+    height: 300px;
+    border: 5px solid;
+}
+#background {
+    height: 300px;
+    position: relative;
+    display: inline-block;
+}
+
+#enemyOuterHpBar{
+    width: 126px;
+    height: 8.5px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: absolute;
+    top: 80px;
+    left: 139px;
+    z-index: 1;
+}
+
+#enemyInnerHpBar{
+    height: 100%;
+    background-color: #69da6d;
+    transition: width 0.5s ease;
+}
+
+#myOuterHpBar{
+    width: 130.5px;
+    height: 9px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: absolute;
+    top: 247px;
+    left: 465px;
+    z-index: 1;
+}
+
+#myInnerHpBar{
+    height: 100%;
+    background-color: #69da6d;
+    transition: width 0.5s ease;
+}
+
+/*my pokemon*/
+#myPokemonImage {
+    height: 250px;
+}
+#myPokemon {
+    position: absolute;
+    top: 97px;
+    left: 50px;
+}
+#myStatsImage{
+    height: 115px;
+}
+#myStats{
+    position: absolute;
+    top: 195px;
+    left: 325px;
+}
+#myName{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+#myLvl{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+}
+#myAttackImage{
+    height: 150px;
+}
+#myAttack{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    left: 390px;
+}
+
+
+/*enemy pokemon*/
+#enemyPokemonImage {
+    height: 230px;
+}
+#enemyPokemon {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+}
+#enemyStatsImage{
+    height: 90px;
+}
+#enemyStats{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#enemyName{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+#enemyLvl{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 180px;
+}
+#enemyAttackImage{
+    height: 130px;
+}
+#enemyAttack{
+    position: absolute;
+    z-index: 1;
+    top: 165px;
+    left: 100px;
+}
+
+#controls {
+    border: 5px solid;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 75px;
+    width: 610px;
+}
+
+#firstButton{
+    height: 45px;
+    width: 148px;
+    position: absolute;
+}
+#secondButton{
+    height: 45px;
+    width: 148px;
+    position: absolute;
+    left: 170px;
+}
+#thirdButton{
+    height: 45px;
+    width: 148px;
+    position: absolute;
+    left: 325px;
+}
+#fourthButton{
+    height: 45px;
+    width: 148px;
+    position: absolute;
+    left: 480px;
+}
