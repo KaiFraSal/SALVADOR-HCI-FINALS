@@ -27,7 +27,7 @@ function myPokemon(name, level, m){
             target.currentHp = 0;
         }
         enemyInnerHpBar.style.width = (target.currentHp/target.hp)*100 + '%';
-        console.log(this.name + " did " + m.damage + " points of damage to the enemy " + target.name);
+        console.log(this.name + " used " + m.moveName + " and did " + m.damage + " points of damage to the enemy " + target.name);
     }
 }
 
@@ -46,7 +46,7 @@ function enemyPokemon(name, level, m){
             target.currentHp = 0;
         }
         setTimeout(function(){myInnerHpBar.style.width = (target.currentHp/target.hp)*100 + '%';}, 1000);
-        console.log(this.name + " did " + m.damage + " points of damage to the enemy " + target.name);
+        console.log(this.name + " used " + m.moveName + " and did " + m.damage + " points of damage to the enemy " + target.name);
     }
 }
 
@@ -57,6 +57,7 @@ function myTrainer(name, p1, p2, p3){
     this.p3 = p3;
     this.currentP = p1;
     this.fainted = function(winner){
+        this.currentP = p2;
         setTimeout(function(){
             document.getElementById("myPokemonImage").src = "resources/zigzagoon.png"
             document.getElementById("myName").innerText = p2.name; 
@@ -64,9 +65,9 @@ function myTrainer(name, p1, p2, p3){
             myInnerHpBar.style.width = 100 + '%';    
         }, 1100);
         firstMoveName.innerText = this.currentP.move.moveName;
-        this.currentP = p2;
                 
         if(this.currentP.currentHp == 0){
+            this.currentP = p3;
             setTimeout(function(){
                 document.getElementById("myPokemonImage").src = "resources/taillow.png"
                 document.getElementById("myName").innerText = p3.name; 
@@ -75,7 +76,6 @@ function myTrainer(name, p1, p2, p3){
             
             myInnerHpBar.style.width = 100 + '%';
             firstMoveName.innerText = this.currentP.move.moveName;
-            this.currentP = p3;
         }
         if(this.currentP.currentHp == 0){
             console.log(this.name + " has lost the battle. " + winner.name + " wins!");
@@ -209,19 +209,5 @@ firstButton.addEventListener('click', function(){
             }
             return;
         }
-        
-
-        // if(theresa.currentP.currentHp == 0){
-        //     theresa.fainted(derek);
-        // }
-        // else{
-        //     theresa.currentP.attack(derek.currentP);
-        // }
-        // if(derek.currentP.currentHp == 0){
-        //     derek.fainted(theresa);
-        // }
-        // else{
-        //     derek.currentP.attack(theresa.currentP);
-        // }
     }
 })
